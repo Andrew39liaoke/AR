@@ -1,0 +1,14 @@
+.DS_Store
+
+# Xcode user-specific state and build output
+xcuserdata/
+*.xcuserstate
+DerivedData/
+build/
+
+# Local presentation-generation scratch files
+.codex-presentation-build/
+
+# Presentation files kept out of this repository
+/第五次.pptx
+/VisionPro_世界固定箭头导航_实机展示.pptx

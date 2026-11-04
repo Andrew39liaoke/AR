@@ -1,0 +1,226 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A00000000000000000000011 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000021 /* App.swift */; };
+		A00000000000000000000012 /* RouteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000022 /* RouteModel.swift */; };
+		A00000000000000000000013 /* WorldTrackingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000023 /* WorldTrackingService.swift */; };
+		A00000000000000000000014 /* ControlWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000024 /* ControlWindow.swift */; };
+		A00000000000000000000015 /* NavigationImmersiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000025 /* NavigationImmersiveView.swift */; };
+		A00000000000000000000016 /* RouteRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000026 /* RouteRenderer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A00000000000000000000020 /* VisionArrowDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisionArrowDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A00000000000000000000021 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		A00000000000000000000022 /* RouteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteModel.swift; sourceTree = "<group>"; };
+		A00000000000000000000023 /* WorldTrackingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldTrackingService.swift; sourceTree = "<group>"; };
+		A00000000000000000000024 /* ControlWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlWindow.swift; sourceTree = "<group>"; };
+		A00000000000000000000025 /* NavigationImmersiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationImmersiveView.swift; sourceTree = "<group>"; };
+		A00000000000000000000026 /* RouteRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteRenderer.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A00000000000000000000031 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A00000000000000000000040 = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000041 /* VisionArrowDemo */,
+				A00000000000000000000042 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A00000000000000000000041 /* VisionArrowDemo */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000021 /* App.swift */,
+				A00000000000000000000022 /* RouteModel.swift */,
+				A00000000000000000000023 /* WorldTrackingService.swift */,
+				A00000000000000000000024 /* ControlWindow.swift */,
+				A00000000000000000000025 /* NavigationImmersiveView.swift */,
+				A00000000000000000000026 /* RouteRenderer.swift */,
+			);
+			path = VisionArrowDemo;
+			sourceTree = "<group>";
+		};
+		A00000000000000000000042 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000020 /* VisionArrowDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A00000000000000000000050 /* VisionArrowDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A00000000000000000000051 /* Build configuration list for PBXNativeTarget "VisionArrowDemo" */;
+			buildPhases = (
+				A00000000000000000000032 /* Sources */,
+				A00000000000000000000031 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VisionArrowDemo;
+			productName = VisionArrowDemo;
+			productReference = A00000000000000000000020 /* VisionArrowDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A00000000000000000000060 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastSwiftUpdateCheck = 2630;
+				LastUpgradeCheck = 2630;
+				TargetAttributes = {
+					A00000000000000000000050 = {
+						CreatedOnToolsVersion = 26.3;
+					};
+				};
+			};
+			buildConfigurationList = A00000000000000000000061 /* Build configuration list for PBXProject "VisionArrowDemo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A00000000000000000000040;
+			productRefGroup = A00000000000000000000042 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A00000000000000000000050 /* VisionArrowDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A00000000000000000000032 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A00000000000000000000011 /* App.swift in Sources */,
+				A00000000000000000000012 /* RouteModel.swift in Sources */,
+				A00000000000000000000013 /* WorldTrackingService.swift in Sources */,
+				A00000000000000000000014 /* ControlWindow.swift in Sources */,
+				A00000000000000000000015 /* NavigationImmersiveView.swift in Sources */,
+				A00000000000000000000016 /* RouteRenderer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A00000000000000000000071 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				SDKROOT = xros;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A00000000000000000000072 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				SDKROOT = xros;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		A00000000000000000000073 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = 4NR3W5RJJ9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSWorldSensingUsageDescription = "用于识别地面并将导航箭头放在真实地面附近。";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsMultipleScenes = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lixinyao.VisionArrowDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 7;
+				XROS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		A00000000000000000000074 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = 4NR3W5RJJ9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSWorldSensingUsageDescription = "用于识别地面并将导航箭头放在真实地面附近。";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsMultipleScenes = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lixinyao.VisionArrowDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 7;
+				XROS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A00000000000000000000051 /* Build configuration list for PBXNativeTarget "VisionArrowDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A00000000000000000000073 /* Debug */,
+				A00000000000000000000074 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A00000000000000000000061 /* Build configuration list for PBXProject "VisionArrowDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A00000000000000000000071 /* Debug */,
+				A00000000000000000000072 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A00000000000000000000060 /* Project object */;
+}
