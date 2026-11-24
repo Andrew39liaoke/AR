@@ -13,6 +13,10 @@
 		A00000000000000000000014 /* ControlWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000024 /* ControlWindow.swift */; };
 		A00000000000000000000015 /* NavigationImmersiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000025 /* NavigationImmersiveView.swift */; };
 		A00000000000000000000016 /* RouteRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000026 /* RouteRenderer.swift */; };
+		D00000000000000000000007 = {isa = PBXBuildFile; fileRef = C00000000000000000000007; };
+		D00000000000000000000008 = {isa = PBXBuildFile; fileRef = C00000000000000000000008; };
+		D00000000000000000000009 = {isa = PBXBuildFile; fileRef = C00000000000000000000009; };
+		B00000000000000000000011 = {isa = PBXBuildFile; fileRef = B00000000000000000000021; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +27,12 @@
 		A00000000000000000000024 /* ControlWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlWindow.swift; sourceTree = "<group>"; };
 		A00000000000000000000025 /* NavigationImmersiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationImmersiveView.swift; sourceTree = "<group>"; };
 		A00000000000000000000026 /* RouteRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteRenderer.swift; sourceTree = "<group>"; };
+		C00000000000000000000007 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTypes.swift; sourceTree = "<group>"; };
+		C00000000000000000000008 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteStore.swift; sourceTree = "<group>"; };
+		C00000000000000000000009 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTestRecorder.swift; sourceTree = "<group>"; };
+
+        B00000000000000000000021 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionArrowDemoTests.swift; sourceTree = "<group>"; };
+        B00000000000000000000020 = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = VisionArrowDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +43,8 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+
+        B00000000000000000000031 = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -41,6 +53,7 @@
 			children = (
 				A00000000000000000000041 /* VisionArrowDemo */,
 				A00000000000000000000042 /* Products */,
+                B00000000000000000000041,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,6 +66,9 @@
 				A00000000000000000000024 /* ControlWindow.swift */,
 				A00000000000000000000025 /* NavigationImmersiveView.swift */,
 				A00000000000000000000026 /* RouteRenderer.swift */,
+				C00000000000000000000009,
+				C00000000000000000000008,
+				C00000000000000000000007,
 			);
 			path = VisionArrowDemo;
 			sourceTree = "<group>";
@@ -61,10 +77,13 @@
 			isa = PBXGroup;
 			children = (
 				A00000000000000000000020 /* VisionArrowDemo.app */,
+                B00000000000000000000020,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
+
+        B00000000000000000000041 = {isa = PBXGroup; children = (B00000000000000000000021,); path = VisionArrowDemoTests; sourceTree = "<group>"; };
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -84,7 +103,22 @@
 			productReference = A00000000000000000000020 /* VisionArrowDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
+
+        B00000000000000000000050 = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = B00000000000000000000051;
+            buildPhases = (B00000000000000000000032, B00000000000000000000031,);
+            buildRules = ();
+            dependencies = (B00000000000000000000080,);
+            name = VisionArrowDemoTests;
+            productName = VisionArrowDemoTests;
+            productReference = B00000000000000000000020;
+            productType = "com.apple.product-type.bundle.unit-test";
+        };
 /* End PBXNativeTarget section */
+        B00000000000000000000080 = {isa = PBXTargetDependency; target = A00000000000000000000050; targetProxy = B00000000000000000000081; };
+        B00000000000000000000081 = {isa = PBXContainerItemProxy; containerPortal = A00000000000000000000060; proxyType = 1; remoteGlobalIDString = A00000000000000000000050; remoteInfo = VisionArrowDemo; };
+
 
 /* Begin PBXProject section */
 		A00000000000000000000060 /* Project object */ = {
@@ -113,6 +147,7 @@
 			projectRoot = "";
 			targets = (
 				A00000000000000000000050 /* VisionArrowDemo */,
+                B00000000000000000000050,
 			);
 		};
 /* End PBXProject section */
@@ -128,9 +163,14 @@
 				A00000000000000000000014 /* ControlWindow.swift in Sources */,
 				A00000000000000000000015 /* NavigationImmersiveView.swift in Sources */,
 				A00000000000000000000016 /* RouteRenderer.swift in Sources */,
+				D00000000000000000000009,
+				D00000000000000000000008,
+				D00000000000000000000007,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+
+        B00000000000000000000032 = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (B00000000000000000000011,); runOnlyForDeploymentPostprocessing = 0; };
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
@@ -140,6 +180,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_MODULES = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+                ENABLE_TESTABILITY = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				SDKROOT = xros;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -162,7 +203,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_TEAM = 4NR3W5RJJ9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSWorldSensingUsageDescription = "用于识别地面并将导航箭头放在真实地面附近。";
@@ -183,7 +224,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 9;
 				DEVELOPMENT_TEAM = 4NR3W5RJJ9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSWorldSensingUsageDescription = "用于识别地面并将导航箭头放在真实地面附近。";
@@ -199,6 +240,36 @@
 			};
 			name = Release;
 		};
+
+        B00000000000000000000073 = {isa = XCBuildConfiguration; name = Debug; buildSettings = {
+            BUNDLE_LOADER = "$(TEST_HOST)";
+            TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VisionArrowDemo.app/VisionArrowDemo";
+            GENERATE_INFOPLIST_FILE = YES;
+            PRODUCT_BUNDLE_IDENTIFIER = com.lixinyao.VisionArrowDemoTests;
+            PRODUCT_NAME = "$(TARGET_NAME)";
+            SDKROOT = xros;
+            SUPPORTED_PLATFORMS = "xros xrsimulator";
+            SWIFT_VERSION = 5.0;
+            XROS_DEPLOYMENT_TARGET = 2.0;
+            TARGETED_DEVICE_FAMILY = 7;
+            CODE_SIGN_STYLE = Automatic;
+            DEVELOPMENT_TEAM = 4NR3W5RJJ9;
+        }; };
+
+        B00000000000000000000074 = {isa = XCBuildConfiguration; name = Release; buildSettings = {
+            BUNDLE_LOADER = "$(TEST_HOST)";
+            TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VisionArrowDemo.app/VisionArrowDemo";
+            GENERATE_INFOPLIST_FILE = YES;
+            PRODUCT_BUNDLE_IDENTIFIER = com.lixinyao.VisionArrowDemoTests;
+            PRODUCT_NAME = "$(TARGET_NAME)";
+            SDKROOT = xros;
+            SUPPORTED_PLATFORMS = "xros xrsimulator";
+            SWIFT_VERSION = 5.0;
+            XROS_DEPLOYMENT_TARGET = 2.0;
+            TARGETED_DEVICE_FAMILY = 7;
+            CODE_SIGN_STYLE = Automatic;
+            DEVELOPMENT_TEAM = 4NR3W5RJJ9;
+        }; };
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -220,6 +291,8 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
+
+        B00000000000000000000051 = {isa = XCConfigurationList; buildConfigurations = (B00000000000000000000073,B00000000000000000000074,); defaultConfigurationIsVisible = 0; defaultConfigurationName = Debug; };
 /* End XCConfigurationList section */
 	};
 	rootObject = A00000000000000000000060 /* Project object */;
